@@ -5,11 +5,9 @@ class CashRegister:
         self.items = []
         self.previous_transactions = []
 
-
     @property
     def discount(self):
         return self._discount
-
 
     @discount.setter
     def discount(self, value):
