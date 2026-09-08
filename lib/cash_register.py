@@ -5,9 +5,11 @@ class CashRegister:
         self.items = []
         self.previous_transactions = []
 
+
     @property
     def discount(self):
         return self._discount
+
 
     @discount.setter
     def discount(self, value):
@@ -16,6 +18,7 @@ class CashRegister:
             self._discount = 0
         else:
             self._discount = value
+
 
     def add_item(self, item, price, quantity=1):
         amount = price * quantity
